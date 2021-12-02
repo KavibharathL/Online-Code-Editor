@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+     background-color:#333436; 
+         
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    resize: both;
+    overflow: auto;
+    
+}
+
+.coder{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px; 
+    padding: 10px 10px 10px 10px;
+}
+
+.code{
+    background-color: #1D1E22;
+    height: 90%;
+    width: 100%;
+}
+.code-type {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    height: fit-content;
+    width: 100%;
+    background-color: #1A1B1F;
+    padding: 10px;
+    border-bottom: 1px solid #333642;
+}
+.output{
+    background-color: #1D1E22;
+}
+.virtual-iframe{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+
+ 
+.content{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height:80%;
+    display: flex;
+    justify-items:center;
+    align-items: center;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+}
+
+.gutter {
+    cursor: s-resize;
+    background-color:#333436;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    
+}
+.gutter.gutter-horizontal {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+    cursor: col-resize;
+    
+} 
+
+.change-layout {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 7px;
+    background-color: #444857;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+    bottom: 15px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 20;
+    user-select: none;
+}
+
+
+.change-layout:hover {
+    background-color: #2d303a;
+}
