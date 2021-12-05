@@ -14,6 +14,8 @@ Online code editor made using HTML, CSS and JavaScript for HTML, CSS and JavaScr
 ## Snippets
 
 ![This is a image](/Images/Img1.png)
+
+
 ![This is a image](/Images/Img2.png)
 
 
